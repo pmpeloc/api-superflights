@@ -12,3 +12,7 @@ nest g mo user
 nest g co user
 * Generar servicio:
 nest g s user
+
+nest g mo passenger
+nest g co passenger
+nest g s passenger
