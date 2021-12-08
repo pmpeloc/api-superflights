@@ -28,4 +28,10 @@ export class UserService {
   async findOne(id: string): Promise<IUser> {
     return await this.model.findById(id);
   }
+
+  async update(id: string, userDTO: UserDTO): Promise<IUser> {
+    const hash = await this.hashPassword(userDTO.password);
+    const user = { ...userDTO, password: hash };
+    return await this.model.findByIdAndUpdate(id, user, { new: true });
+  }
 }
