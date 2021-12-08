@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import * as bcypt from 'bcrypt';
 import { Model } from 'mongoose';
@@ -33,5 +33,10 @@ export class UserService {
     const hash = await this.hashPassword(userDTO.password);
     const user = { ...userDTO, password: hash };
     return await this.model.findByIdAndUpdate(id, user, { new: true });
+  }
+
+  async delete(id: string) {
+    await this.model.findByIdAndDelete(id);
+    return { status: HttpStatus.OK, msg: 'Deleted' };
   }
 }
