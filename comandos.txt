@@ -4,6 +4,7 @@ yarn add -D @nestjs/mongoose
 yarn add -D @nestjs/config
 
 yarn add class-validator class-transformer
+yarn add bcrypt
 
 * Generar módulos:
 nest g mo user
