@@ -24,4 +24,8 @@ export class UserService {
   async findAll(): Promise<IUser[]> {
     return await this.model.find();
   }
+
+  async findOne(id: string): Promise<IUser> {
+    return await this.model.findById(id);
+  }
 }
