@@ -1,4 +1,0 @@
-yarn add -D mongoose
-yarn add -D mongoose-autopopulate
-yarn add -D @nestjs/mongoose
-yarn add -D @nestjs/config

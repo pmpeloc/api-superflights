@@ -3,6 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { AppService } from './app.service';
       useCreateIndex: true,
       useFindAndModify: false,
     }),
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],

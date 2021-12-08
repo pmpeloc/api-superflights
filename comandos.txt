@@ -1,0 +1,13 @@
+yarn add -D mongoose
+yarn add -D mongoose-autopopulate
+yarn add -D @nestjs/mongoose
+yarn add -D @nestjs/config
+
+yarn add class-validator class-transformer
+
+* Generar módulos:
+nest g mo user
+* Generar controladores:
+nest g co user
+* Generar servicio:
+nest g s user
