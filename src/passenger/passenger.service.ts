@@ -15,4 +15,12 @@ export class PassengerService {
     const newPassenger = new this.model(passengerDTO);
     return await newPassenger.save();
   }
+
+  async findAll(): Promise<IPassenger[]> {
+    return await this.model.find();
+  }
+
+  async findOne(id: string): Promise<IPassenger> {
+    return await this.model.findById(id);
+  }
 }
