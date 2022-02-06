@@ -39,4 +39,7 @@ nest g s flight
        },
      ]),
    ],
-8-
+8- Modificar el constructor del module-name.controller.ts para insertar el module-name.service.ts en el constructor
+9- Crear los métodos necesarios en el controller: GET, PUT, POST, DELETE, etc...
+10- Inyectar el model del module-name en el module-name.service.ts, junto con su interface 
+11- Crear los servicios que son requeridos en module-name.service.ts
