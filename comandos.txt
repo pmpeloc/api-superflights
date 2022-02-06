@@ -16,3 +16,15 @@ nest g s user
 nest g mo passenger
 nest g co passenger
 nest g s passenger
+
+nest g mo flight
+nest g co flight
+nest g s flight
+
+# ORDEN DE DESARROLLO:
+
+1- Crear por cli module, controller y service
+2- Crear manualmente folder dto => module-name.dto.ts
+3- Crear la clase module-nameDTO
+4- Crear la interface module-name.interface.ts
+
