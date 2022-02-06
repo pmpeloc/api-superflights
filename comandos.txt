@@ -26,5 +26,17 @@ nest g s flight
 1- Crear por cli module, controller y service
 2- Crear manualmente folder dto => module-name.dto.ts
 3- Crear la clase module-nameDTO
-4- Crear la interface module-name.interface.ts
-
+4- Crear la interface module-name.interface.ts en el folder common/interfaces
+5- Crear el folder schema => module-name.schema.ts
+6- Exportar el model creado en el folder common/models
+7- Modificar el module-name.module.ts para agregar el model en el value imports con la config del orm u odm
+   For example in Mongoose:
+   imports: [
+     MongooseModule.forFeatureAsync([
+       {
+         name: PASSENGER.name,
+         useFactory: () => PassengerSchema,
+       },
+     ]),
+   ],
+8-
