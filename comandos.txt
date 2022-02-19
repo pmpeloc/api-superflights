@@ -46,3 +46,5 @@ nest g s flight
 12- Si en un controller requires los services de otro module, entonces debes inyectarlos en el constructor del controller
     y también exportar al servicio solicitado desde su module-name.module.ts. For example: revisar passenger.module.ts
 13- 
+
+yarn add axios moment
