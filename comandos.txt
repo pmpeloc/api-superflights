@@ -48,3 +48,4 @@ nest g s flight
 13- 
 
 yarn add axios moment
+yarn add @nestjs/swagger swagger-ui-express
