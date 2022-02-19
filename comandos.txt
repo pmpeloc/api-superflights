@@ -49,3 +49,9 @@ nest g s flight
 
 yarn add axios moment
 yarn add @nestjs/swagger swagger-ui-express
+yarn add @nestjs/jwt passport-jwt
+yarn add @nestjs/passport passport passport-local
+
+nest g mo auth
+nest g co auth
+nest g s auth
